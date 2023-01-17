@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+
+<div onclick="changeColor(this)" style="background-color: red;">
+	      Tap me to change my color!
+	         </div>
+
+	<script>
+      function changeColor(element) {
+         var currentColor = element.style.backgroundColor;
+         if(currentColor == "red") {
+            element.style.backgroundColor = "green";
+         } else {
+            element.style.backgroundColor = "red"; 
+         }
+      }
+   </script>
+</script>
+
+</body>
+</html>
